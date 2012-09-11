@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:51
+-keep class eu.pulsation.cordova_android_enyo.CordovaAndroidEnyo { <init>(...); }
+

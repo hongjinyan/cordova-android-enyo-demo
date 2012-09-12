@@ -1,5 +1,5 @@
 
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/fittable/source/FittableLayout.css */
+/* /Users/phil/src/cordova/EnyoSlidepaneSandbox/enyo/tools/../../lib/layout/fittable/source/FittableLayout.css */
 
 .enyo-fittable-rows-layout {
 	position: relative;
@@ -71,7 +71,7 @@
 	margin-bottom: 0 !important;
 }
 
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/list/source/List.css */
+/* /Users/phil/src/cordova/EnyoSlidepaneSandbox/enyo/tools/../../lib/layout/list/source/List.css */
 
 .enyo-list {
 	position: relative;
@@ -89,7 +89,7 @@
 	right: 0;
 }
 
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/list/source/PulldownList.css */
+/* /Users/phil/src/cordova/EnyoSlidepaneSandbox/enyo/tools/../../lib/layout/list/source/PulldownList.css */
 
 .enyo-list-pulldown {
 	position: absolute;
@@ -152,7 +152,7 @@
 	-ms-transform: rotate(180deg);
 }
 
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/panels/source/arrangers/Arranger.css */
+/* /Users/phil/src/cordova/EnyoSlidepaneSandbox/enyo/tools/../../lib/layout/panels/source/arrangers/Arranger.css */
 
 .enyo-arranger {
 	position: relative;
@@ -185,7 +185,7 @@
 }
 
 
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/panels/source/Panels.css */
+/* /Users/phil/src/cordova/EnyoSlidepaneSandbox/enyo/tools/../../lib/layout/panels/source/Panels.css */
 
 .enyo-panels {
 }
@@ -200,7 +200,7 @@
 	}
 }
 
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/tree/source/Node.css */
+/* /Users/phil/src/cordova/EnyoSlidepaneSandbox/enyo/tools/../../lib/layout/tree/source/Node.css */
 
 .enyo-node {
 	cursor: default;
@@ -232,7 +232,7 @@
 }
 
 
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/onyx/source/css/onyx.css */
+/* /Users/phil/src/cordova/EnyoSlidepaneSandbox/enyo/tools/../../lib/onyx/source/css/onyx.css */
 
 /* onyx.css - combined CSS file for all released Onyx controls.
    converted from single files to get around IE bug that allows
@@ -267,13 +267,8 @@
 	vertical-align: middle;
 }
 
-.onyx-icon.onyx-icon-button.active, .onyx-icon.onyx-icon-button:active:hover {
+.onyx-icon.active, .onyx-icon:active:hover {
 	background-position: 0 -32px;
-}
-
-.onyx-icon.disabled {
-	opacity: 0.4;
-	filter: alpha(opacity=40);
 }
 
 /* Button.css */
@@ -345,6 +340,23 @@
 
 .onyx-button > img {
 	padding: 0px 3px;
+}
+
+/* optional */
+
+button.onyx-button.onyx-affirmative {
+	background-color: #91BA07;
+	color: #F1F1F1;
+}
+
+button.onyx-button.onyx-negative {
+	background-color: #C51616;
+	color: #F1F1F1;
+}
+
+button.onyx-button.onyx-blue {
+	background-color: #35A8EE;
+	color: #F1F1F1;
 }
 
 /* Checkbox.css */
@@ -546,9 +558,9 @@
 
 /* customize a toolbar to support menus */
 .onyx-menu-toolbar, .onyx-toolbar.onyx-menu-toolbar {
-	position: relative;
 	z-index: 10; 
 	overflow: visible;
+	position: relative;
 }
 
 /* Picker.css */
@@ -770,7 +782,6 @@
 
 .onyx-toggle-button.disabled {
 	opacity: 0.4;
-	filter: alpha(opacity=40);
 }
 
 .onyx-toggle-content {
@@ -954,7 +965,6 @@
 .onyx-progress-bar-bar.striped.animated {
 	-webkit-animation: progress-bar-stripes 2s linear infinite;
 	-moz-animation: progress-bar-stripes 2s linear infinite;
-	-o-animation: progress-bar-stripes 2s linear infinite;
 	animation: progress-bar-stripes 2s linear infinite;
 }
 
@@ -976,7 +986,7 @@
   }
 }
 
-@-o-keyframes progress-bar-stripes {
+@keyframes progress-bar-stripes {
   from {
     background-position: 0 0;
   }
@@ -985,13 +995,14 @@
   }
 }
 
-@keyframes progress-bar-stripes {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 40px 0;
-  }
+/* optional */
+
+.onyx-dark {
+	background-color: #626368;
+}
+
+.onyx-light {
+	background-color: #cacaca;
 }
 
 /* ProgressButton.css */
@@ -1120,693 +1131,22 @@
 	margin: 4px 6px 5px;
 }
 
-/* some default colors */
-.onyx-dark {
-	background-color: #555656;
-}
 
-.onyx-light {
-	background-color: #cacaca;
-}
+/* /Users/phil/src/cordova/EnyoSlidepaneSandbox/enyo/tools/../../lib/WebView/master.css */
 
-.onyx-green {
-	background-color: #91BA07;
-}
-
-.onyx-red {
-	background-color: #C51616;
-}
-
-.onyx-blue {
-	background-color: #35A8EE;
-}
-
-.onyx-button.onyx-blue {
-	background-color: #35A8EE;
-	color: #F2F2F2;
-}
-
-.onyx-button.onyx-affirmative {
-	background-color: #91BA07;
-	color: #F2F2F2;
-}
-
-.onyx-button.onyx-negative {
-	background-color: #C51616;
-	color: #F2F2F2;
-}
-
-.onyx-button.onyx-dark {
-	background-color: #555656;
-	color: #F2F2F2;
-}
-
-.onyx-button.onyx-light {
-	background-color: #cacaca;
-	color: #2F2F2F;
-}
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/fittable/samples/sample.css */
-
-.fittable-sample-box {
-	border: 2px solid lightblue;
-	padding: 4px;
-}
-.fittable-sample-b {
-	background-color: #F1FFF1;
-}
-.fittable-sample-mtb {
-	margin-top: 3px;
-	margin-bottom: 3px;
-}
-.fittable-sample-mlr {
-	margin-left: 6px;
-	margin-right: 6px;
-}
-.fittable-sample-o {
-	border-color: orange;
-}
-.fittable-sample-height {
-	height: 140px;
-}
-
-.fittable-sample-fitting-color {
-	background: #B7BFC4;
-}
-
-.fittable-sample-shadow {
-	box-shadow: -6px 0px 6px rgba(0,0,0,0.3);
-	-moz-box-shadow: -6px 0px 6px rgba(0,0,0,0.3);
-	-webkit-box-shadow: -6px 0px 6px rgba(0,0,0,0.3);
-}
-
-.fittable-sample-shadow2 {
-	box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
-	-moz-box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
-	-webkit-box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
-}
-
-.fittable-sample-shadow3 {
-	box-shadow: 0 -6px 6px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0 -6px 6px rgba(0,0,0,0.3);
-	-webkit-box-shadow: 0 -6px 6px rgba(0,0,0,0.3);
-}
-
-.fittable-sample-shadow4 {
-	box-shadow: 6px 0px 6px rgba(0,0,0,0.3);
-	-moz-box-shadow: 6px 0px 6px rgba(0,0,0,0.3);
-	-webkit-box-shadow: 6px 0px 6px rgba(0,0,0,0.3);
-}
-
-.fittable-sample-boxable {
-	margin: 0.5em;
-	padding: 1em;
-	border: 0.2em solid beige;
-}
-
-.fittable-sample-boxable > * {
-	border: 0.1em dotted orange;
-	padding: 0.5em;
-}
-
-.fittable-sample-test {
-	border-width: 0.2em;
-	border-color: red;
-}
-
-.fittable-sample-small-test {
-	border-width: 0.2em;
-	border-color: red;
-	height: 150px;
-}
-
-.fittable-sample-section {
-	padding: 30px 10px 10px;
-	font-weight: bold;
-}
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/panels/samples/PanelsSample.css */
-
-.panels-sample-panels {
-	min-height: 320px;
-	min-width: 320px;
-}
-
-.panels-sample-panels > * {
-	border: 2px solid #333;
-	font-size: 5em;
-	text-align: center;
-}
-
-.panels-sample-wide > * {
-	min-width: 50%;
-}
-
-.panels-sample-collapsible > * {
-	min-width: 250px;
-}
-
-.panels-sample-spiral > * {
-	min-width:150px;
-	min-height:150px;
-	max-height:150px;
-	max-width:150px;
-}
-
-.panels-sample-grid > * {
-	min-width:150px;
-	min-height:150px;
-	max-height:150px;
-	max-width:150px;
-}
-.arranger-scroller {
-}
-
-@media screen and (max-width: 480px) {
-	.arranger-scroller {
-		max-height: 270px;
-	}
-}
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/panels/samples/PanelsFlickrSample.css */
-
-.panels-sample-flickr-panels {
-	color: white;
-	background: #555;
-}
-.panels-sample-flickr-panels > * {
-	width: 320px;
-	box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-	-moz-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-	-webkit-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-}
-.panels-sample-flickr-item {
-	position: relative;
-	border-bottom: 1px solid #0E0E0E;
-	padding: 12px 16px;
-	background-color: #333333;
-}
-
-.panels-sample-flickr-item.onyx-selected {
-	background-color: MidnightBlue;
-}
-
-.panels-sample-flickr-title {
-	position: absolute;
-	top: 40px;
-	right: 0;
-	left: 100px;
-	
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.panels-sample-flickr-thumbnail {
-	width: 75px;
-	height: 75px;
-}
-.panels-sample-flickr-more-button {
-	color: white; margin: 10px;
-}
-.panels-sample-flickr-more-spinner {
-	vertical-align: middle;
-	margin: -4px 0 0 4px;
-}
-.panels-sample-flickr-center {
-	margin: auto;
-}
-.panels-sample-flickr-main {
-	background-color: #333;
-}
-.panels-sample-flickr-image {
-	min-width: 80%;
-	border: solid 5px #CCC;
-	box-shadow: 1px 1px 5px #999;
-}
-
-.panels-sample-flickr-image.tall {
-	min-width: 0;
-	min-height: 80%;
-}
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/panels/samples/PanelsSlidingSample.css */
-
-.panels-sample-sliding-panels > * {
-	width: 320px;
-	background-color: #EAEAEA;
-	box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-	-moz-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-	-webkit-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-}
-
-.panels-sample-sliding-item {
-	padding: 10px;
-	border-bottom: 1px solid black;
-}
-
-.panels-sample-sliding-content {
-	text-align: left;
-	padding: 10px;
-}
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/list/samples/ListBasicSample.css */
-
-.list-sample {
-	background-color: gray;
-}
-.list-sample-list {
-	width: 50%;
-	min-width: 300px;
-	max-width: 600px;
-	margin: auto;
-	background-color: #eee;
-}
-.list-sample-item {
-	border: 1px solid silver;
-	padding: 18px;
-	font-size: 18px;
-	font-weight: bold;
-}
-.list-sample-index {
-	float: right;
-	font-size: 16px;
-	font-weight: normal;
-}
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/list/samples/ListContactsSample.css */
-
-.list-sample-contacts {
-	color: white;
-}
-.list-sample-contacts-list {
-	background: url(../lib/layout/list/samples/assets/bg.png);
-}
-/* item */
-.list-sample-contacts-item {
-	height: 100px;
-	border-top: 1px solid silver;
-	padding: 12px 16px;
-	background-color: #333333;
-}
-.list-sample-contacts-item-selected {
-	background: #226B9A url(../lib/layout/list/samples/assets/item-hilite.png) repeat-x bottom;
-}
-.list-sample-contacts-item > * {
-	display: inline-block;
-	vertical-align: middle;
-}
-.list-sample-contacts-avatar {
-	width: 32px;
-	height: 32px;
-	padding-right: 10px;
-}
-.list-sample-contacts-description {
-	font-size: 12px;
-	color: silver;
-}
-.list-sample-contacts-remove-button {
-	float: right;
-	display: none;
-}
-/* divider */
-.list-sample-contacts-divider {
-	background-color: #666;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 8px 14px;
-}
-/* popup */
-.list-sample-contacts-popup {
-	width: 280px;
-}
-.list-sample-contacts-popup > * {
-	display: block;
-	margin: 10px 10px;
-}
-.list-sample-contacts-populate-button {
-	float: right;
-	margin-top: 25px;
-}
-.list-sample-contacts-label {
-	display: inline-block;
-	width: 120px;
-	padding-right: 10px;
-}
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/list/samples/ListPulldownSample.css */
-
-a:link, a:visited {
-	color: lightblue;
-	text-decoration: underline;
-}
-.list-sample-pulldown-list {
-	background: grey;
-}
-.list-sample-pulldown-item {
-	border-bottom: 1px solid #0E0E0E;
-	padding: 12px 16px;
-	background-color: #333333;
-	/**/
-	font-size: 14px;
-	color: white;
-}
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/layout/tree/source/Node.css */
-
-.enyo-node {
-	cursor: default;
-	padding: 4px;
-}
-
-.enyo-node img {
-	vertical-align: middle;
-	padding-right: 6px;
-}
-
-.enyo-node-box {
-	overflow: hidden;
-}
-
-.enyo-node-client {
-	position: relative;
-}
-
-.enyo-animate .enyo-node-box, .enyo-animate .enyo-node-client {
-	transition-property: height, top;
-	transition-duration: 0.2s, 0.2s;
-	-moz-transition-property: height, top;
-	-moz-transition-duration: 0.2s, 0.2s;
-	-o-transition-property: height, top;
-	-o-transition-duration: 0.2s, 0.2s;
-	-webkit-transition-property: height, top;
-	-webkit-transition-duration: 0.2s, 0.2s;
-}
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/onyx/samples/sample.css */
-
-.onyx-sample {
-	padding: 10px;
-}
-.onyx-sample-tools {
-	padding-bottom:10px;
-}
-.onyx-sample-tools > * {
-	margin: 3px;
-}
-.onyx-sample-divider {
-	color: #F49200;
-	text-transform: uppercase;
-	font-family: Segoe UI, Prelude Medium, Helvetica, Verdana, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-.onyx-sample-result-box {
-	width:100%;
-}
-.onyx-sample-result {
-	padding:8px;
-}
-.onyx-sample-spaced-button {
-	margin:3px;
-}
-.onyx-sample-animate-label {
-	vertical-align:middle; 
-	padding-left:5px;
-}
-.onyx-sample-label {
-	color: #1879CD;
-	font-size: 18px;
-	text-transform: uppercase;
-}
-.onyx-sample-popup {
-	font-size: 30px;
-	text-align: center;
-}
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/onyx/samples/DrawerSample.css */
-
-.drawer-sample {
-	padding: 10px;
-}
-.drawer-sample-divider {
-	color: #F49200;
-	text-transform: uppercase;
-	font-family: Segoe UI, Prelude Medium, Helvetica, Verdana, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-.drawer-sample-label {
-	color: #1879CD;
-	font-size: 18px;
-	text-transform: uppercase;
-}
-.drawer-sample-box {
-	border: 2px solid lightblue;
-	padding: 4px;
-	white-space: nowrap;
-	overflow:hidden;
-}
-.drawer-sample-mtb {
-	margin-top: 3px;
-	margin-bottom: 3px;
-}
-.drawer-sample-mlr {
-	margin-left: 6px;
-	margin-right: 6px;
-}
-.drawer-sample-o {
-	border-color: orange;
-}
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/canvas/samples/CanvasPrimitivesSample.css */
-
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../../lib/canvas/samples/CanvasBallsSample.css */
-
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../samples/Playground.css */
-
-.playground-sample-player {
-	padding: 15px;
-}
-
-.playground-sample-source {
-	padding:15px;
-	font-family: monospace;
-	font-size: 12px;
-	white-space: pre-wrap;
-	box-sizing: border-box;
-	width:100%; 
-	height:100%;
-}
-
-.playground-sample-panels > * {
-	width:320px;
-	box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-	-moz-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-	-webkit-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-}
-
-.sample-output {
-	min-height: 200px;
-	border: 1px solid black;
-	margin: 10px;
-	padding: 10px;
-	border-radius: 10px;
-	text-align: center;
-}
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../samples/AjaxSample.css */
-
-.ajax-sample {
-	padding: 15px;
-}
-
-.ajax-sample-source {
-	padding:15px;
-	font-family: monospace;
-	font-size: 12px;
-	white-space: pre-wrap;
-	box-sizing: border-box;
-	width:100%; 
-	height:100%;
-	margin-top:15px;
-}
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../samples/JsonpSample.css */
-
-.jsonp-sample {
-	padding: 15px;
-}
-
-.jsonp-sample-source {
-	padding:15px;
-	font-family: monospace;
-	font-size: 12px;
-	white-space: pre-wrap;
-	box-sizing: border-box;
-	width:100%; 
-	height:100%;
-	margin-top:15px;
-}
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../samples/WebServiceSample.css */
-
-.webservice-sample {
-	padding: 15px;
-}
-
-.webservice-sample-source {
-	padding:15px;
-	font-family: monospace;
-	font-size: 12px;
-	white-space: pre-wrap;
-	box-sizing: border-box;
-	width:100%; 
-	height:100%;
-	margin-top:15px;
-}
-
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../samples/RepeaterSample.css */
-
-.repeater-sample {
-	padding:15px;
-}
-.repeater-sample-item {
-	padding:4px;
-	margin:2px;
-	border:1px solid gray;
-	background-color: lightgray;
-}
-
-/* /Users/phil/src/enyo/git/sampler/enyo/tools/../samples/ScrollerSample.css */
-
-.scroller-sample-panels {
-	margin:15px;
-}
-.scroller-sample-content {
-	width:4000px;
-}
-.scroller-sample-scroller {
-	border: 1px solid orange;
-}
+.floating-menu {position:fixed;top: 0px;width:100px;z-index:100;}
+.floating-menu-right {position:fixed; top: 0px; right: 0px; width: 100px; z-index: 100;}
 
 /* ../source/App.css */
 
-body {
-	-webkit-overflow-scrolling: touch;
-	font-family: 'Muli', 'Helvetica Neue', 'Nimbus Sans L', Arial, sans-serif;
-}
-button {
-	font-family: 'Muli', 'Helvetica Neue', 'Nimbus Sans L', Arial, sans-serif;
-}
-
-.item {
-	position: relative;
-	border-bottom: 1px solid #0E0E0E;
-	padding: 16px 12px;
-	background-color: #333333;
-	color:white;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-
-.list {
-	background: url(../assets/bg.png);
-}
-
-.item.onyx-selected {
-	background-color: #226B9A;
-}
-
-.panels > * {
-	width:320px;
-	box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-	-moz-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-	-webkit-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-}
-
-.scroller {
-	margin: 0;
-}
-
-.back {
-	width:75px;
-}
-
-.footer-toolbar {
-    height:60px;
-}
-
-
-.hidden {
-	opacity:0;
-}
-
-.wide {
-	min-width:100%;
-}
-
-.pullout {
-	position: absolute;
-	top: 0px;
-	right: 0;
-	bottom: 0;
-	width: 50%;
-	background: #D8D8D8;
-	box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-}
-
-.source {
-	padding:15px;
-	font-family: monospace;
-	font-size: 12px;
-	white-space: pre-wrap;
-}
-
-.source-tabs {
-	width:60px;
-}
-
-.nowrap {
-	white-space: pre;
-}
-
-.wrap-label {
-	vertical-align:middle; 
-	padding-left:5px;
-}
-
-.test-tools {
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.test-tools > * {
-	padding-bottom:10px;
-}
-
-.test-button-left {
-	margin-right:2.5%;
-	width:47.5%;
-}
-
-.test-button-right {
-	margin-left:2.5%;
-	width:47.5%;
+/*
+	Put anything you reference with "url(../source)" in ../assets/
+	This way, you can minify your application, and just remove the "source" folder for production
+*/
+#app {
+	margin: 16px;
+	border-radius: 4px;
+	background-color: silver;
+	padding: 16px;
 }
 
